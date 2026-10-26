@@ -1,0 +1,37 @@
+:root {
+  font-family: 'Space Grotesk', Arial, sans-serif;
+  color-scheme: dark;
+  --ink: #070910;
+  --paper: #f4f5f8;
+  --accent: #e62429;
+  --accent-rgb: 230, 36, 41;
+  --blue: #3898ff;
+  --blue-rgb: 56, 152, 255;
+  --muted: #a6adbd;
+  --line: #283144;
+  --surface: #101522;
+  --display: 'Space Grotesk', Arial, sans-serif;
+  --body: 'Space Grotesk', Arial, sans-serif;
+  --mono: 'Space Grotesk', Arial, sans-serif;
+  --page-pad: clamp(1.25rem, 6vw, 6rem);
+}
+:root[data-theme='light'] {
+  color-scheme: light;
+  --ink: #f7f8fb;
+  --paper: #151a25;
+  --accent: #c71927;
+  --accent-rgb: 199, 25, 39;
+  --blue: #075cb5;
+  --blue-rgb: 7, 92, 181;
+  --muted: #525d70;
+  --line: #d6dce6;
+  --surface: #edf1f7;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+body { margin: 0; background: var(--ink); color: var(--paper); transition: background .2s, color .2s; }
+body::before { content: ''; position: fixed; z-index: 0; inset: 0; pointer-events: none; opacity: .18; background: repeating-radial-gradient(circle at 92% 12%, transparent 0 30px, rgba(var(--blue-rgb),.28) 31px 32px, transparent 33px 61px), repeating-conic-gradient(from 4deg at 92% 12%, transparent 0deg 13deg, rgba(var(--accent-rgb),.25) 13.2deg 13.5deg, transparent 13.8deg 26deg); background-size: 560px 560px; background-repeat: no-repeat; mask-image: linear-gradient(90deg, transparent 35%, #000 100%); }
+#app { position: relative; z-index: 1; }
+button, input, textarea { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+::selection { background: var(--accent); color: #ffffff; }
