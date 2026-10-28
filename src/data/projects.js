@@ -4,6 +4,7 @@ export const projects = [
     title: 'ModernTech HR',
     image: '/projects/moderntech-hr.png',
     alt: 'Preview of the ModernTech HR system',
+    live: 'https://nikitamullerr.github.io/HR_System-Group-4/',
     github: 'https://github.com/nikitamullerr/Group-4_HRSystem_Project2',
     stack: ['JavaScript', 'Node.js + Express', 'MySQL', 'JWT'],
     description: 'A team-built HR management system for employee records, attendance, leave, payroll and performance reviews.',

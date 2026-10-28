@@ -23,12 +23,12 @@ export const skillGroups = [
   {
     name: 'Front-End Practices',
     items: [
-      { name: 'Git', level: 'Still learning' },
-      { name: 'GitHub', level: 'Still learning' },
-      { name: 'VS Code', level: 'Still learning' },
-      { name: 'npm', level: 'Still learning' },
-      { name: 'Figma', level: 'Still learning' },
-      { name: 'Frontend and backend design', level: 'Still learning' },
+      { name: 'Git', level: 'Confident' },
+      { name: 'GitHub', level: 'Confident' },
+      { name: 'VS Code', level: 'Confident' },
+      { name: 'npm', level: 'Confident' },
+      { name: 'Figma', level: 'Confident' },
+      { name: 'Frontend and backend design', level: 'Confident' },
     ],
   },
   {

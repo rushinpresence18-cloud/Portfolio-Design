@@ -12,6 +12,9 @@
 .nav { display: flex; gap: clamp(1rem, 3vw, 2.5rem); align-items: center; }
 .nav a { color: var(--muted); text-decoration: none; font-size: .85rem; transition: color .2s; }
 .nav a:hover, .nav a:focus-visible { color: var(--accent); }
+.nav .nav-hire { padding: .65rem 1rem; border: 1px solid #e62429; border-radius: 4px; color: #fff; background: #e62429; font-weight: 600; transition: background .2s, border-color .2s, transform .2s; }
+.nav .nav-hire:hover, .nav .nav-hire:focus-visible { border-color: #c71927; color: #fff; background: #c71927; }
+.nav .nav-hire:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
 .game-mode-row { position: relative; max-width: 1440px; min-height: 3.75rem; margin: 0 auto; padding: .8rem var(--page-pad); display: flex; align-items: center; gap: 1rem; }
 .game-mode-overlay { position: absolute; z-index: 9; top: calc(100% - .35rem); left: var(--page-pad); width: min(320px, calc(100vw - 2.5rem)); }
 .game-mode-toggle { display: inline-flex; align-items: center; gap: .55rem; min-height: 2.25rem; padding: 0 .85rem; border: 1px solid var(--line); border-radius: 99px; color: var(--muted); background: transparent; cursor: pointer; letter-spacing: .08em; transition: color .2s, border-color .2s, background .2s; }
@@ -231,7 +234,7 @@
   .contact-grid { gap: 2.5rem; }
 }
 @media (max-width: 760px) {
-  .topbar { height: 4.5rem; gap: .75rem; } .nav { min-width: 0; gap: .9rem; overflow-x: auto; scrollbar-width: none; } .nav::-webkit-scrollbar { display: none; } .nav a { flex: 0 0 auto; font-size: .75rem; }
+  .topbar { height: 4.5rem; gap: .75rem; } .nav { min-width: 0; gap: .9rem; overflow-x: auto; scrollbar-width: none; } .nav::-webkit-scrollbar { display: none; } .nav a { flex: 0 0 auto; font-size: .75rem; } .nav .nav-hire { padding: .55rem .75rem; }
   .hero { min-height: 0; padding-top: 3.5rem; grid-template-columns: 1fr; gap: 2.5rem; }
   .hero h1 { font-size: clamp(3.2rem, 12vw, 5rem); }
   .hero-visual { width: min(100%, 390px); justify-self: start; }
@@ -256,6 +259,7 @@
   .brand { flex: 0 0 auto; font-size: .95rem; }
   .nav { gap: .85rem; }
   .nav a { padding-block: .55rem; font-size: .75rem; }
+  .nav .nav-hire { padding: .5rem .7rem; }
   .theme-toggle { flex: 0 0 auto; padding: .45rem .55rem; font-size: .68rem; }
   .game-mode-row { min-height: 3.25rem; padding-block: .55rem; }
   .game-mode-hint { font-size: .62rem; }
