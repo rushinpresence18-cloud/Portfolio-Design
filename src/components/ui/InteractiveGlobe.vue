@@ -45,7 +45,8 @@ function draw() {
   const sinYaw = Math.sin(yaw)
   const cosPitch = Math.cos(pitch)
   const sinPitch = Math.sin(pitch)
-  const accent = getComputedStyle(document.documentElement).getPropertyValue('--accent').trim() || '#56f0d0'
+  const root = canvas.value.closest('.rushin-portfolio-root, #app')
+  const accent = getComputedStyle(root).getPropertyValue('--accent').trim() || '#56f0d0'
 
   skillMarkers.value = skills.map((skill, index) => {
     const longitude = (.45 + (index - 1) * .72)

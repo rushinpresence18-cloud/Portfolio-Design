@@ -1,14 +1,20 @@
 <script setup>
-import { ref } from 'vue'
+import { inject, ref } from 'vue'
 defineProps({ project: { type: Object, required: true } })
 const imageReady = ref(false)
 const imageFailed = ref(false)
+const assetBase = inject('assetBase', '/')
+
+function assetUrl(path) {
+  return `${assetBase}${path.replace(/^\//, '')}`
+}
 </script>
+
 <template>
   <article class="project-card reveal">
     <a class="project-image" :href="project.live || project.github" target="_blank" rel="noreferrer" :aria-label="project.live ? `View ${project.title} live site` : `View ${project.title} on GitHub`">
       <div v-if="!imageReady" class="image-fallback" aria-hidden="true"><span class="mono">PROJECT / {{ project.number }}</span><strong>{{ project.title }}</strong><span class="fallback-mark">✳</span></div>
-      <img v-if="!imageFailed" :src="project.image" :alt="project.alt" loading="lazy" @load="imageReady = true" @error="imageFailed = true" />
+      <img v-if="!imageFailed" :src="assetUrl(project.image)" :alt="project.alt" loading="lazy" @load="imageReady = true" @error="imageFailed = true" />
       <span class="image-index mono">{{ project.number }} / 03</span>
     </a>
     <div class="project-meta">
