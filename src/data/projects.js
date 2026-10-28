@@ -25,6 +25,7 @@ export const projects = [
     title: 'Student Tutoring Platform',
     image: '/projects/studyhub-tutoring.png',
     alt: 'Preview of the TutorLink student tutoring platform',
+    live: 'https://nikitamullerr.github.io/HTML_CSS_JavaScript_Showcase/',
     github: 'https://github.com/nikitamullerr/HTML_CSS_JavaScript_Showcase',
     stack: ['HTML', 'CSS', 'JavaScript'],
     description: 'TutorLink helps students find verified tutors by course, budget, availability and learning style.',
