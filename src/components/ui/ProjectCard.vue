@@ -21,6 +21,7 @@ function assetUrl(path) {
       <div>
         <a class="project-title" :href="project.live || project.github" target="_blank" rel="noreferrer">{{ project.title }} ↗</a>
         <p class="project-desc">{{ project.description }}</p>
+        <p v-if="project.completed" class="project-completed">Completed {{ project.completed }}</p>
       </div>
       <a class="arrow-link" :href="project.live || project.github" target="_blank" rel="noreferrer" :aria-label="project.live ? `Open ${project.title} live site` : `Open ${project.title} on GitHub`">↗</a>
     </div>
