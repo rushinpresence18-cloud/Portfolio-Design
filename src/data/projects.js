@@ -9,7 +9,7 @@ export const projects = [
     github: 'https://github.com/nikitamullerr/Group-4_HRSystem_Project2',
     stack: ['JavaScript', 'Node.js + Express', 'MySQL', 'JWT'],
     description: 'A team-built HR management system for employee records, attendance, leave, payroll and performance reviews.',
-    learned: 'Built the dashboard module and practiced connecting it to a shared API.',
+    learned: 'Built the dashboard module and practised connecting it to a shared API.',
   },
   {
     number: '02',
@@ -19,7 +19,7 @@ export const projects = [
     completed: 'September 9, 2026',
     github: 'https://github.com/chefmanie27-pixel/Occasion-catering',
     stack: ['Vue 3', 'Express', 'MySQL', 'PayFast'],
-    description: 'A catering and event-booking platform for browsing packages, customizing bookings and tracking orders.',
+    description: 'A catering and event-booking platform for browsing packages, customising bookings and tracking orders.',
     learned: 'Contributed to the design system and Vue components for a full-stack booking experience.',
   },
   {
@@ -32,6 +32,6 @@ export const projects = [
     github: 'https://github.com/nikitamullerr/HTML_CSS_JavaScript_Showcase',
     stack: ['HTML', 'CSS', 'JavaScript'],
     description: 'TutorLink helps students find verified tutors by course, budget, availability and learning style.',
-    learned: 'Practiced team workflows and version control while building a tutor discovery experience.',
+    learned: 'Practised team workflows and version control while building a tutor discovery experience.',
   },
 ]
